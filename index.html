@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            background-color: white;
+            height: 100%;
+            margin: 0px;
+            position: relative;
+            
+        }
+        .head-bar {
+            display: flex;
+            color:rgb(88, 88, 88);
+            font-size: 0.8em;
+            font-family: arial, sans-serif;
+            padding-top: 15px;
+            
+        }
+        .head-bar-left {
+            padding-left: 17px;
+        }
+        a + a {
+            margin-left: 12px;
+        }
+        .head-bar-right {
+            
+            padding-right: 20px;
+            font-weight: 500;
+            margin-left: auto;
+        }
+        .logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            margin-bottom: -28px;
+            width: 325px;
+            
+        }
+        .wrapper {
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            height: 45px;
+        }
+        input[type="text"] {
+            color: black;
+            
+            
+        }
+        
+        .search-bar {
+            font-size: 20px;
+            position: relative;
+            border-width: 1px;
+            border-radius: 25px;
+            width: 400px;
+            height: 40px;
+            
+            padding-left: 50px;
+            padding-right: 30px;
+            
+            border-color:rgba(33,33,33,0.2)
+            
+        }
+        
+        .search-icon {
+            z-index: 0;
+            margin-left: -430px;
+            width: 14px;
+            opacity: 0.4;
+            margin-top:-30px;
+            color: gray;
+        }
+        .search-bar:hover {
+            box-shadow: 0 0 5px rgba(33,33,33,0.2); 
+        }
+        .search-bar:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(33,33,33,0.2);
+        }
+        .button-box {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .buttons {
+
+            width: 270px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: relative;
+            top: 20px;
+            
+            
+        } 
+        .button {  
+            padding: 8px 15px 8px 15px;    
+            border-radius: 5px;
+            border: 1px solid transparent;
+            color: rgb(95, 95, 95);
+        }
+        .button:hover{
+            border-color: rgb(205, 206, 205);
+            color: black;
+            border-width: 1px;
+        }
+        .language {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 15px;
+
+        }
+        .bottom {
+            background-color: rgb(243, 242, 242);
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .country {
+            border: 1px solid rgb(218, 216, 216);
+            height: 40px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            color:rgb(141, 140, 140)
+        }
+        .links {
+            display: flex;
+            flex-direction: row;
+            height: 40px;
+            flex-wrap: wrap-reverse;
+            border: 0px solid rgb(218, 216, 216);
+            color:rgb(94, 93, 93)
+        }
+        .left-links {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            justify-content: center;
+            
+        }
+        .right-links {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="head-bar">
+        <div class="head-bar-left">
+            <a href="*">About</a>
+            <a>Store</a>
+        </div>
+        <div class="head-bar-right">
+            <a>Gmail</a>
+            <a>Images</a>
+        </div>
+    </div>
+    <img class="logo" src="https://cdn.vox-cdn.com/thumbor/Pkmq1nm3skO0-j693JTMd7RL0Zk=/0x0:2012x1341/1200x800/filters:focal(0x0:2012x1341)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg">
+    <div class="wrapper">
+        <input type="text" class="search-bar">
+        <img class="search-icon" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU2Ljk2NiA1Ni45NjYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU2Ljk2NiA1Ni45NjY7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KPHBhdGggZD0iTTU1LjE0Niw1MS44ODdMNDEuNTg4LDM3Ljc4NmMzLjQ4Ni00LjE0NCw1LjM5Ni05LjM1OCw1LjM5Ni0xNC43ODZjMC0xMi42ODItMTAuMzE4LTIzLTIzLTIzcy0yMywxMC4zMTgtMjMsMjMgIHMxMC4zMTgsMjMsMjMsMjNjNC43NjEsMCw5LjI5OC0xLjQzNiwxMy4xNzctNC4xNjJsMTMuNjYxLDE0LjIwOGMwLjU3MSwwLjU5MywxLjMzOSwwLjkyLDIuMTYyLDAuOTIgIGMwLjc3OSwwLDEuNTE4LTAuMjk3LDIuMDc5LTAuODM3QzU2LjI1NSw1NC45ODIsNTYuMjkzLDUzLjA4LDU1LjE0Niw1MS44ODd6IE0yMy45ODQsNmM5LjM3NCwwLDE3LDcuNjI2LDE3LDE3cy03LjYyNiwxNy0xNywxNyAgcy0xNy03LjYyNi0xNy0xN1MxNC42MSw2LDIzLjk4NCw2eiIgZmlsbD0iIzAwMDAwMCIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+        
+    </div>
+    <div class="button-box">
+        <div class="buttons">
+            <input type="button" class="button" value="Google Search">
+            <input type="button" class="button" value="I'm Feeling Lucky">
+        </div>
+    </div>
+    <p class="language">Google offered in: <a href="*">Francais</a></p>
+    
+    <div class="bottom">
+        <div class="country">
+            <p>Canada</p>
+        </div>
+        <div class="links">
+            <div class="left-links">
+                <ul>Advertising</ul>
+                <ul>Business</ul>
+                <ul>How Search works</ul></div>
+            <div class="right-links">
+                <ul>Privacy</ul>
+                <ul>Terms</ul>
+                <ul>Settings</ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
